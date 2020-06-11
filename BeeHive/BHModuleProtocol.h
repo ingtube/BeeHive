@@ -75,5 +75,13 @@
 
 - (void)modDidUpdateContinueUserActivity:(BHContext *)context;
 
+//Add custom event
+
+- (void)modDidLogin:(BHContext *)context;
+
+- (void)modDidLogout:(BHContext *)context;
+
+- (void)modDidHomepageFinishLoading:(BHContext *)context;
+
 - (void)modDidCustomEvent:(BHContext *)context;
 @end

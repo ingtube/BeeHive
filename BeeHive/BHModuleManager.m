@@ -40,9 +40,10 @@ static  NSString *kWillContinueUserActivitySelector = @"modWillContinueUserActiv
 static  NSString *kContinueUserActivitySelector = @"modContinueUserActivity:";
 static  NSString *kDidUpdateContinueUserActivitySelector = @"modDidUpdateContinueUserActivity:";
 static  NSString *kFailToContinueUserActivitySelector = @"modDidFailToContinueUserActivity:";
+static  NSString *kDidLoginSelector = @"modDidLogin:";
+static  NSString *kDidLogoutSelector = @"modDidLogout:";
+static  NSString *kDidHomepageFinishLoadingSelector = @"modDidHomepageFinishLoading:";
 static  NSString *kAppCustomSelector = @"modDidCustomEvent:";
-
-
 
 @interface BHModuleManager()
 
@@ -389,6 +390,9 @@ static  NSString *kAppCustomSelector = @"modDidCustomEvent:";
                                @(BHMDidUpdateUserActivityEvent):kDidUpdateContinueUserActivitySelector,
                                
                                @(BHMQuickActionEvent):kQuickActionSelector,
+                               @(BHMDidLoginEvent):kDidLoginSelector,
+                               @(BHMDidLogoutEvent):kDidLogoutSelector,
+                               @(BHMDidHomepageFinishLoadingEvent):kDidHomepageFinishLoadingSelector,
                                @(BHMDidCustomEvent):kAppCustomSelector,
                                }.mutableCopy;
     }
