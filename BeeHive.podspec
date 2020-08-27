@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BeeHive"
-  s.version      = "1.5.3"
+  s.version      = "1.5.4"
   s.summary      = "BeeHive is a kind of modular programming method"
 
   s.description  = <<-DESC

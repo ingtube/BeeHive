@@ -14,8 +14,7 @@
 typedef enum
 {
     BHEnvironmentDev = 0,
-    BHEnvironmentTest1,
-    BHEnvironmentTest2,
+    BHEnvironmentTest,
     BHEnvironmentStage,
     BHEnvironmentProd
 }BHEnvironmentType;
